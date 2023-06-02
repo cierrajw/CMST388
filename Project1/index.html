@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+	<style>
+		.thumbnail {
+			border: none;
+		}
+
+		.thumbnail:hover {
+			border: 2px solid red;
+		}
+	</style>
+	<script>
+		function displayCaption(caption) {
+			document.getElementById("caption").textContent = caption;
+		}
+
+		function selectThumbnail(image, caption) {
+			var thumbnails = document.getElementsByClassName("thumbnail");
+			for (var i = 0; i < thumbnails.length; i++) {
+				thumbnails[i].style.border = "none";
+			}
+			image.style.border = "2px solid red";
+			document.getElementById("largeImage").src = image.src;
+			displayCaption(caption);
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<div class="row">
+			<div class="col-12">
+				<h1>Meditation Photo Gallery</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div>
+					<img class="thumbnail" src="https://www.ashleytreatment.org/wp-content/uploads/2019/01/spirituality-health.jpg" title="Peace and meditation" width="19.375%" height="19.5%" alt="" onmouseover="displayCaption('Peace and meditation')" onclick="selectThumbnail(this, 'Peace and meditation')"/>
+					<img class="thumbnail" src="https://the.ismaili/sites/default/files/spirituality_image_tinc_.jpg" title="Quiet contemplation" width="19.375%" height="19.5%" alt="" onmouseover="displayCaption('Quiet contemplation')" onclick="selectThumbnail(this, 'Quiet contemplation')"/>
+					<img class="thumbnail" src="https://images.newindianexpress.com/uploads/user/imagelibrary/2022/2/19/w1200X800/Force.jpg" title="Say no to aggravation" width="19.375%" height="19.5%" alt="" onmouseover="displayCaption('Say no to aggravation')" onclick="selectThumbnail(this, 'Say no to aggravation')"/>
+					<img class="thumbnail" src="https://www.tc.columbia.edu/media/news/images/2022/january/resized-Admission-Home-4-lg.jpg" title="We can save the nation" width="19.375%" height="19.5%" alt="" onmouseover="displayCaption('We can save the nation')" onclick="selectThumbnail(this, 'We can save the nation')"/>
+					<img class="thumbnail" src="https://www.verywellmind.com/thmb/eT-uwv2bSG5gIURWb0vI_dm1gqk=/6000x0/filters:no_upscale():max_bytes(150000):strip_icc()/balanced-stones-on-a-pebble-beach-875372302-5a91e16bc673350037f6c2ca.jpg" title="With peace and meditation" width="19.375%" height="19.5%" alt="" onmouseover="displayCaption('With peace and meditation')" onclick="selectThumbnail(this, 'With peace and meditation')"/>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div>
+					<img id="largeImage" src="https://www.ashleytreatment.org/wp-content/uploads/2019/01/spirituality-health.jpg" title="Your health is your wealth" width="100%" height="100%" alt=""/>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="caption">
+					<p id="caption"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
