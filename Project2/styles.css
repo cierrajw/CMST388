@@ -1,0 +1,35 @@
+body {
+  background-color: #f7faff; /* Setting the background color of the body */
+}
+
+h2 {
+  text-align: center; /* Aligning the heading text in the center */
+}
+
+form {
+  display: block; /* Displaying the form as a block element */
+  margin: 0 auto; /* Centering the form horizontally using auto margin */
+  max-width: 400px; /* Setting the maximum width of the form to 400px */
+}
+
+label {
+  display: block; /* Displaying labels as block elements */
+  margin-bottom: 10px; /* Adding bottom margin to labels for spacing */
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  display: block; /* Displaying input fields, textarea, and select as block elements */
+  width: 100%; /* Setting the width of the elements to 100% of their container */
+  padding: 5px; /* Adding padding to the elements */
+  margin-bottom: 10px; /* Adding bottom margin to the elements for spacing */
+  box-sizing: border-box; /* Including padding and border in the total width of the elements */
+}
+
+button[type="submit"],
+button[type="reset"] {
+  display: block; /* Displaying submit and reset buttons as block elements */
+  margin-top: 10px; /* Adding top margin to the buttons for spacing */
+}
