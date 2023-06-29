@@ -2,7 +2,7 @@
 // 		Your Name: Cierra Washington
 // 		Last Modified Date: 06/28/2023
 // 		File: event_registration.js
-// 		File Description: <Enter a brief paragraph to describe the purpose of this file>
+// 		File Description: The purpose of this file is to implement the logic for the frontend of an application for buying tickets.
 // */
 
 // // Set the minimum and maximum number of tickets able to be purchased
